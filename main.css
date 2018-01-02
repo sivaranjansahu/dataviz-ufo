@@ -1,0 +1,114 @@
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400');
+body{
+    background-color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    font-size: 16px;
+    
+}
+h1{
+    margin: 15px;
+}
+.viz{
+    position: fixed;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.purple{
+    background-color: rebeccapurple;
+}
+.viz-timeline{
+    position: absolute;
+    bottom: 0;
+    height: 400px;
+    width:100%;
+    background-color: #ff9900;
+    bottom:-400px;
+    left:0;
+}
+.viz-timeline.open{
+    bottom:0px;
+}
+.xaxis{
+    background-color:#fff;
+    stroke:#fff;
+    border:1px solid #ccc;
+}
+.year-label{
+    font-size: 16px;
+    letter-spacing: 1px;
+    font-weight: 300
+}
+.country-data{
+    position: absolute;
+    height: 100px;
+    top: 0px;
+    left: 0;
+    width: auto;
+    padding:0 15px;
+    background-color: #be7304;
+}
+.viz-timeline.open .country-data{
+    top: -100px;
+}
+.country-data h1{
+    
+    margin-left: 0;
+}
+.tabs{
+    padding: 15px;
+    margin-top:30px;
+}
+.tabs span{
+    font-size: 18px;
+    margin-right: 15px;
+    border: 2px solid rebeccapurple;
+    padding: 8px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+
+}
+.tabs span.active{
+    background-color: rebeccapurple;
+    color: #fff;
+}
+#detail-box{
+    position: absolute;
+    bottom: 400px;
+    height: auto;
+    width: 200px;
+    
+    background-color: #111;
+    left: 12.5vw;
+    padding: 15px;
+    display: none;
+    opacity: 0;
+
+}
+#detail-box h1, #detail-box h2, #detail-box h4, #detail-box span{
+    color: #fff;
+    margin-top:10px;
+}
+.viz-timeline{
+    
+}
+
+.shape-icon path{
+    fill:#ff9900
+}
+.bottomline{
+    position: absolute;
+    bottom:-300px;
+    height: 300px;
+    left:15px;
+    width: 1px;
+    
+    border-style: none none dotted; 
+    
+    background-color:rgba(255,255,255,0.6);
+}

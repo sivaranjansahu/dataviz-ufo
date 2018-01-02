@@ -1,0 +1,41 @@
+<head>
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <h1>UFO Sightings</h1>
+    <div class="viz" id="svg"></div>
+    <div class="viz-timeline" id="viz-timeline">
+        <div class="country-data">
+                <h1 id="timeline-country"></h1>
+                <span id="timeline-count"></span> UFO Sightings
+                between <span id="fromYear"></span> to <span id="toYear"></span>
+                
+        </div>
+        <div class="tabs">
+                <span id="timeline-tab" class="active">Timeline</span>
+                <span id="shape-tab">Shapes</span>
+            </div>
+        <div id="timeline"></div>
+        <div id="shape-chart"></div>
+        
+    </div>
+    <div id="detail-box">
+        <span class="label">City</span>
+        <h4 id="city"></h4>
+        <span class="label">Country</span>
+        <h4 id="country"></h4>
+        <span class="label">UFO Shape</span>
+        <h4 id="shape"></h4>
+        <span class="label">Duration in seconds</span>
+        <h4 id="duration"></h4>
+        <hr class="bottomline"></hr>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.12.0/d3.js"></script>
+    <script src="https://d3js.org/d3-collection.v1.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+        crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+    <script src="yearTimeline.js"></script>
+</body>
